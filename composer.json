@@ -1,16 +1,17 @@
 {
-    "name": "jdorn/sql-formatter",
+    "name": "4st/sql-formatter",
     "description": "a PHP SQL highlighting library",
-    "homepage": "https://github.com/jdorn/sql-formatter/",
+    "homepage": "https://github.com/forest2087/sql-formatter",
     "keywords": ["sql", "highlight"],
     "minimum-stability": "dev",
     "license": "MIT",
     "type": "library",
     "require": {
-        "php": ">=5.2.4"
+        "php": ">=5.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "3.7.*",
+        "illuminate/support": ">=5.0.0"
     },
     "authors": [
         {
@@ -20,6 +21,9 @@
         }
     ],
     "autoload": {
+        "psr-4": {
+            "FW\\SqlFormatter\\": "lib/"
+        },
         "classmap": ["lib"]
     },
     "extra": {
