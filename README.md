@@ -9,8 +9,10 @@ Usage
 
 Add the following to config\app.php
 
+	//service provider
 	FW\SqlFormatter\SqlFormatterServiceProvider::class
 	
+	//alias
 	'SF' => FW\SqlFormatter\SqlFormatter::class
 
 In code
